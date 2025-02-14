@@ -5,7 +5,7 @@ import Headers from './components/Headers'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-full overflow-hidden'>
    
       <Headers/>
     </div>

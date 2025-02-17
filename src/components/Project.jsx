@@ -10,7 +10,7 @@ const Project = () => {
         const updateCardsToShow = () => {
             if (window.innerWidth >= 1024) {
               setCardsToShow(projectsData.length);
-            } else{
+            }  else{
               setCardsToShow(1)
             }
         };
@@ -31,10 +31,10 @@ const Project = () => {
     }
 
   return (
-    <div className='conatiner mx-auto py-4 pt-20 px-6 md:px-20
+    <div className='container mx-auto py-4 pt-20 px-6 md:px-20
     lg:px-32 text-cente my-20 w-full overflow-hidden' id='Projects'>
       <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Projects 
-        <span className='underlien underline-offset-4 decoration-1 under font-light'>Completed</span></h1>
+        <span className='underline underline-offset-4 decoration-1 under font-light'>Completed</span></h1>
       <p className='text-center text-gray-500 mb-8 max-w-80 mx-auto'>Crafting Spaces, Exploring Our Portofolio </p>
     
     {/* Slide buttons  */}
@@ -58,11 +58,11 @@ const Project = () => {
                     <img src={project.image} alt={project.title} className='w-full h-auto mb-14'/>
                 <div className="absolute left-0 right-0 bottom-5 flex justify-center">
                     <div className='inline-block bg-white px-4 py-2 rounded-full shadow-md'>
-                        <h2 className='text-xl font-semibold text-gray-800'>
+                        <h2 className='sm:text-xl md:text-[9px] lg:text-xl font-semibold text-gray-800'>
                             {project.title}
                         </h2>
-                        <p className='text-gray-500 text-sm'>
-                            {project.price} <span>|</span> {project.location}
+                        <p className='text-gray-500 sm:text-sm md:text-[9px] lg:text-sm'>
+                            {project.price} <span className='PX-1'>|</span> {project.location}
                         </p>
                     </div>
                 </div>
